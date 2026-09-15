@@ -1,0 +1,4 @@
+interface:
+  display_name: "Swift Project Architecture"
+  short_description: "Pragmatic modern architecture for Swift projects"
+  default_prompt: "Review or design this Swift project using pragmatic modern Swift architecture, preserving useful boundaries without adding unnecessary layers."
