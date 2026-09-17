@@ -1,21 +1,27 @@
-# Swift Project Architecture
+# Skills
 
-A reusable architecture skill for Swift, SwiftUI, Swift Package Manager, and server-side Swift projects. Covers domain boundaries, persistence, use cases, testing, and Swift concurrency, with architecture proportional to the problem.
+My personal collection of skills for Codex and other compatible coding agents.
+
+## Available skills
+
+| Skill | Description |
+| --- | --- |
+| [Swift Project Architecture](skills/swift-project-architecture/SKILL.md) | Pragmatic architecture for Swift, SwiftUI, Swift Package Manager, and server-side Swift. Covers domain boundaries, persistence, use cases, testing, and concurrency. |
 
 ## Install
 
 Requires Node.js, npm, and Git.
 
-Choose your agent and installation scope interactively:
+Choose which skills to install and which agents to use:
 
 ```sh
-npx skills add SlyDen/swift-project-architecture-skill
+npx skills add SlyDen/skills
 ```
 
-Install globally for Codex:
+Install Swift Project Architecture globally for Codex:
 
 ```sh
-npx skills add SlyDen/swift-project-architecture-skill --skill swift-project-architecture --agent codex --global
+npx skills add SlyDen/skills --skill swift-project-architecture --agent codex --global
 ```
 
 Omit `--global` to install in the current project. Add `--yes` to skip prompts.
@@ -56,5 +62,15 @@ The [Skills CLI](https://github.com/vercel-labs/skills#creating-skills) discover
 Preview available skills without installing:
 
 ```sh
-npx skills add SlyDen/swift-project-architecture-skill --list
+npx skills add SlyDen/skills --list
+```
+
+## Adding a skill
+
+Create a folder at `skills/<skill-name>/` with a `SKILL.md` containing YAML frontmatter with `name` and `description`. Keep supporting references, scripts, and agent metadata inside that folder. Add the skill to the table above.
+
+Check discovery before publishing:
+
+```sh
+npx skills add . --list
 ```
